@@ -553,8 +553,8 @@ mod tests {
     fn brand_licence_only_for_brand_logos() {
         let root = super::root();
         for (path, kind, pass) in [
-            ("docs/brand/artcraft-mark.svg", "logo", true),
-            ("docs/brand/artcraft-mark.svg", "icon", false),
+            ("assets/brand/office-mark.svg", "logo", true),
+            ("assets/brand/office-mark.svg", "icon", false),
             ("assets/icons/mark.svg", "logo", false),
         ] {
             let mut a = asset(path, "Storyteller", kind, BRAND_LICENCE);
